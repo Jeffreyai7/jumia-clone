@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Jumia</title>
+</head>
+<body class="roboto-regular">
+    <header>
+        <div>
+            <div onclick="popUp()" id="menu"><img src="logos/menu.svg" alt="" width="24" height="24" id="menu"></div>
+            <div id="popUp">
+                <ul>    
+                    <li><img src="logos/red-apple.svg" alt="" srcset="" width="16" height="16"><span>Supermarket</span></li>
+                    <li><img src="logos/barber-beauty-salon.svg" alt="" srcset="" width="16" height="16"><span>Health & Beauty</span></li>
+                    <li><img src="logos/home.svg" alt="" srcset="" width="16" height="16"><span>Home & office</span></li>
+                    <li><img src="logos/pot.svg" alt="" srcset="" width="16" height="16"><span>Appliances</span></li>
+                    <li><img src="logos/iphone.svg" alt="" srcset="" width="16" height="16"><span>Phones & Tablets</span></li>
+                    <li><img src="logos/monitor.svg" alt="" srcset="" width="16" height="16"><span>Computing</span></li>
+                    <li><img src="logos/television.svg" alt="" srcset="" width="16" height="16"><span>Electronics</span></li>
+                    <li><img src="logos/t-shirt.svg" alt="" srcset="" width="16" height="16"><span>Fashion</span></li>
+                    <li><img src="logos/baby.svg" alt="" srcset="" width="16" height="16"><span>Baby Products</span></li>
+                    <li><img src="logos/game-console.svg" alt="" srcset="" width="16" height="16"><span>Gaming</span></li>
+                    <li><img src="logos/dumbbell.svg" alt="" srcset="" width="16" height="16"><span>Sporting Goods</span></li>
+                    <li><img src="logos/white-circle-with-two-dots.svg" alt="" srcset="" width="16" height="16"><span>Other categories</span></li>
+                </ul>
+            </div>
+            <div><img src="logos/jumia-nigeria-vector-logo.svg" alt="" width="150" height="200"></div>
+        </div>
+        <div class="hidden search-input">
+            <label for="search">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="25" y1="25" x2="16.65" y2="16.65"></line>
+                  </svg>
+                 <input type="search" name="" id="search" placeholder="Search products, brands and categories">
+             </label>
+            <button type="button" id="search-btn">SEARCH</button>
+        </div>
+        <div >
+            <div class="toggle">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                <circle cx="11" cy="11" r="7"></circle>
+                <line x1="25" y1="25" x2="16.65" y2="16.65"></line>
+              </svg>    
+            </div>
+            <div class="icons"><img src="logos/3898372_user_people_man_add_icon.svg" alt="" width="24" height="24"> <span class="hidden nav-icons"><span>Account</span><img src="logos/chevron-down-arrow.svg" alt="" width="10" height="10"></span></div>
+            <div class="icons"><img class="hidden" src="logos/question.svg" alt="" width="24" height="24"> <span class="hidden nav-icons"><span>Help</span><img src="logos/chevron-down-arrow.svg" alt="" width="10" height="10"></span></div>
+            <div class="icons"><img src="logos/shopping-cart.svg" alt="" srcset="" width="24" height="24"><span class="hidden">Cart</span></div>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="wrapper">
+                <div class="img-icons">
+                        <div class="imgdiv">
+                            <img id="productpic" src="images/flowerpic.jpg" alt="" srcset="">
+                        </div>
+                        <div class="iconsdiv">
+                            <h2>Share this Product</h2>
+                            <img src="logos/facebook-rounded-outline.svg" alt="" width="25" height="25">
+                            <img src="logos/twitter.svg" alt="" width="25" height="25">
+                        </div>
+                </div>
+                <div id="details">
+                                <div>
+                                    <button type="button">Official Store</button>
+                                    <button type="button" >Pay on Delivery</button>
+                                </div>
+                                <h1 id="title">Flowers from Heaven</h1>
+                                <p ><span id="category">Brand: Horticulture</span></p>
+                                <div class="flashsales">
+                                    <p><span class="tag"><img src="logos/tag.svg" width="24" height="24" alt="" srcset=""> <span>Flash sales</span></span><span id="countdown">Time left: 17h 23min 15s</span></p>
+                                    <div><span class="price"><b>N 109,000</b></span><span id="slashed-price">N 150,000</span><span id="percent">-29%</span></div>
+                                    <div><span>25 items left</span> <div class="bar"></div></div>
+                                </div>
+                                <div class="starshead">
+                                    <p>+ shipping from N2,370 to LEKKI-AJAH (SANGOTEDO)</p>
+                                    <p class="stars"><img src="logos/white-medium-star.svg" alt="" width="16" height="16"> <img src="logos/white-medium-star.svg" alt="" width="16" height="16"><img src="logos/white-medium-star.svg" alt="" width="16" height="16"><img src="logos/white-medium-star.svg" alt="" width="16" height="16"><img src="logos/white-medium-star.svg" alt="" width="16" height="16"> <span class="verified">(11 verified ratings)</span></p>
+                                </div>
+                            <div class="shopcart">
+                               <img src="logos/add-shopping-cart.svg" alt="" width="24" height="24"> <span>ADD TO CART</span>
+                            </div>
+                            <div>
+                                <h2 class="pro">PROMOTIONS</h2>
+                                <div class="promotion"><img src="images/pngaaa.com-7093206.png" alt="" width="24" height="24" class="circle-star"> <span>Call 07060000000 to order</span></div>
+                                <div class="promotion"><img src="images/pngaaa.com-7093206.png" alt="" width="24" height="24" class="circle-star"><span>Need extra money? Loan up to N500,000 on the JumiaPay Android App</span></div>
+                                <div class="promotion"><img src="images/pngaaa.com-7093206.png"  alt="" width="24" height="24" class="circle-star"><span>Enjoy shipping fees when you select a PickUp Station at Checkout</span></div>
+                            </div>
+                    </div>
+
+            </div>
+                <div>
+                <h2>Description</h2>
+                <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo animi molestiae adipisci minus culpa architecto sequi dicta alias voluptatem expedita mollitia, repellat, quia est consequuntur reiciendis, ratione aliquam. Recusandae, quidem.</p>
+                <small>Report incorrect product information</small>
+                </div>
+        </section>
+        <article>
+            <h2>Products</h2>
+            <div class="products-container">
+                <div class="products-info">
+                    <p><img src="logos/white-medium-star.svg" width="16" height="16" alt="" srcset=""><span>Men's Casual Premium Slim-fit T-Shirts</span></p>
+                    <span>Men's clothing</span>
+                    <span>#900</span>
+                    <button type="button">View product</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

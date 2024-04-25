@@ -1,0 +1,416 @@
+*{
+    box-sizing: border-box;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+body{
+    background-color: whitesmoke;
+    margin: 0;
+    /* font-family: ; */
+}
+
+.hidden{
+    display: none;
+}
+
+div#popUp{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: 4.5rem;
+    z-index: 10;
+}
+
+#menu{
+cursor: pointer;
+}
+
+
+div#popUp{
+position: absolute;
+top: 70%;
+border: 1px solid black;
+background-color: white;
+padding-top: 10px;
+padding-left: 5px;
+width: 15%;
+transition: ease-in-out 2s;
+cursor: pointer;
+}
+
+div#popUp ul{
+display: contents;
+}
+
+div#popUp li{
+list-style: none;
+display: flex;
+gap: 5px;
+align-items: center;
+margin-bottom: 20px;
+cursor: pointer;
+}
+
+div#popUp li:hover{
+    color: #f68b1e;
+}
+
+header > div, .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header > :nth-child(3){
+    width: 40%;
+    color: #313133;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    border: 2px solid #f1f1f2;
+    padding-left: 4px;
+    background-color: white;
+    border-radius: 5px;    
+}
+
+input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 1px 2px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    width:  25rem;
+    height: 2.5rem;
+}
+
+input[type="search"]:focus{
+    outline: none;
+}
+
+.search-input button{
+    width: 5.125rem;
+    height: 2.5rem;
+    background-color: #e07e1b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.icons{
+    gap: 5px;
+    cursor: pointer;
+}
+
+.icons:hover{
+    color: #e07e1b;
+}
+
+.nav-icons span{
+margin-right: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    height: 100%;
+    position: relative;
+}
+
+
+.imgdiv{
+   width: 240px;
+   height: 240px;
+    margin: 5px auto;
+}
+
+.imgdiv img{
+    width: 100%;
+    height: 100%;
+}
+
+.iconsdiv img{
+    margin-right: 10px;
+}
+
+section.main{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+}
+
+div#details > :nth-child(1) button{
+    display: inline-block;
+    height: 1.25rem;
+    color: white;
+    /* white-space: nowrap; */
+}
+div#details > :nth-child(1) > :nth-child(1){
+    width: 6.75rem;
+    background-color: #276076;
+    cursor: pointer;
+    border: none;
+    padding: 0 4px;
+}
+
+
+div#details > :nth-child(1) > :nth-child(2){
+    width: 7.625rem;
+    background-color: #ff0000;
+    cursor: pointer;
+    border: none;
+    padding: 0 4px;
+
+}
+
+
+.flashsales{
+    border: 2px solid #E61601;
+}
+
+.tag{
+    display: flex;
+    align-items: center;
+}
+
+.flashsales p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E61601;
+    margin: 0;
+    height: 2rem;
+    color: white;
+    padding: 2px 5px;
+}
+
+.flashsales > :nth-child(2){
+    height: 2.625rem;
+    display: flex;
+    justify-content:flex-start;
+    gap: 10px;
+    align-items: center;
+    font-size: 24px;
+    padding-left: 5px;
+}
+
+.flashsales > :nth-child(2) >:nth-child(2){
+    font-size: 12px;
+    text-decoration: line-through;
+    color: grey;
+}
+
+.flashsales > :nth-child(3){
+    display: flex;
+    justify-content: flex-start;
+    gap: 2px;
+    align-items: center;
+    white-space: nowrap;
+    padding: 2px 5px;
+}
+
+#percent{
+    color: #e07e1b;
+    background-color: lightpink;
+    height: 24px;
+}
+#slashed-price{
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#price{
+    height: 30px;
+}
+
+
+
+.bar{
+    width: 80%;
+    height: 10px;
+    background-image: linear-gradient(to right, #e07e1b 50%, grey 50%);
+    border-radius: 5px;
+}
+
+div.starshead p{
+font-size: 12px;
+}
+
+.verified{
+    font-size: 14px;
+    color:#264996;
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+}
+
+div.shopcart{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #f68b1e;
+cursor: pointer;
+color: white;
+height: 4rem;
+border-radius: 5px;
+padding: 5px 15px;
+}
+
+div.shopcart span{
+    width: 70% ;    
+}
+
+div.promotion{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    color: #264996;
+    cursor: pointer;
+}
+
+.pro{
+    color: #313133;
+    font-size: 14px;
+}
+
+.description{
+    margin-bottom: 50px;
+}
+
+small{
+    color: #264996;
+    padding: 10px;
+}
+
+/* article-session  */
+article{
+    background-color: white;
+    padding: 10px;
+}
+
+article > div{
+    display: flex;
+    justify-content: start;
+}
+
+.products-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.products-info p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 0;
+}
+
+.products-info > span{
+    padding-left: 20px;
+}
+
+.products-info button{
+    background-color: #e07e1b;
+    color: #f1f1f2;
+    border-radius: 5px;
+    height: 2.5rem;
+    cursor: pointer;
+    border: none;
+    width: 50%;
+}
+
+.products-container{
+    display: block;
+} 
+
+@media screen and (min-width:768px) {
+    .hidden{
+        display: block;
+    } 
+
+    .toggle{
+        display: none;
+    }  
+
+    .search-input{
+        display: flex;
+        justify-content: flex-start;
+        width: 45%;
+        gap: 20px;
+    }
+
+    header > :nth-child(1){
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header > :nth-child(3){
+        width: 25%;
+    }
+    
+    main{
+        flex-direction: row;
+        width: 98%;
+        margin: 30px auto;
+
+    }
+
+    section.main{
+        width: 75%;
+        margin-right:15px;
+        
+    }
+    article{
+        position: relative;
+        width: 25%;
+        height: 100%;
+    }
+    
+    .products-container{
+    display: block;
+    overflow-y: scroll;
+    height: 100vh;
+    scrollbar-width: none;
+    } 
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        /* gap: 20px; */
+        
+    }
+
+    .img-icons{
+        width: 50%;
+    }
+}   
