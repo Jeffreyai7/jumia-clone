@@ -49,7 +49,7 @@ border: 1px solid black;
 background-color: white;
 padding-top: 10px;
 padding-left: 5px;
-width: 15%;
+width: 15rem;
 transition: ease-in-out 2s;
 cursor: pointer;
 }
